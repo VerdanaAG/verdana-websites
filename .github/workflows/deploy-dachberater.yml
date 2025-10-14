@@ -1,0 +1,32 @@
+name: Deploy Dachberater Schweiz
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'landing-pages/dachberater-schweiz/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy to Cloudflare Pages
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy landing-pages/dachberater-schweiz --project-name=dachberater-schweiz
+      
+      - name: Notify deployment success
+        if: success()
+        run: |
+          echo "✅ Dachberater Schweiz deployed successfully!"
+          echo "🌐 URL: https://dachberater-schweiz.pages.dev"
+
