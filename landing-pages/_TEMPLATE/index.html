@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[BESCHREIBUNG - 150-160 Zeichen]">
+    <meta name="keywords" content="[KEYWORDS]">
+    <title>[TITEL] - [UNTERTITEL]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>[HAUPTÜBERSCHRIFT]</h1>
+            <p class="hero-subtitle">[UNTERTITEL / VALUE PROPOSITION]</p>
+            <a href="#contact" class="cta-button">[CALL-TO-ACTION TEXT]</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h2>[VORTEILE ÜBERSCHRIFT]</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">🛡️</div>
+                <h3>[VORTEIL 1 TITEL]</h3>
+                <p>[VORTEIL 1 BESCHREIBUNG]</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💰</div>
+                <h3>[VORTEIL 2 TITEL]</h3>
+                <p>[VORTEIL 2 BESCHREIBUNG]</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💬</div>
+                <h3>[VORTEIL 3 TITEL]</h3>
+                <p>[VORTEIL 3 BESCHREIBUNG]</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🏢</div>
+                <h3>[VORTEIL 4 TITEL]</h3>
+                <p>[VORTEIL 4 BESCHREIBUNG]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <h2>[PROZESS ÜBERSCHRIFT]</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>[SCHRITT 1 TITEL]</h3>
+                <p>[SCHRITT 1 BESCHREIBUNG]</p>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>[SCHRITT 2 TITEL]</h3>
+                <p>[SCHRITT 2 BESCHREIBUNG]</p>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>[SCHRITT 3 TITEL]</h3>
+                <p>[SCHRITT 3 BESCHREIBUNG]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>[FORMULAR ÜBERSCHRIFT]</h2>
+                <p>[FORMULAR BESCHREIBUNG]</p>
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <span class="checkmark">✓</span>
+                        <span>[TRUST ELEMENT 1]</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="checkmark">✓</span>
+                        <span>[TRUST ELEMENT 2]</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="checkmark">✓</span>
+                        <span>[TRUST ELEMENT 3]</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/[FORMSPREE_ID]" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="vorname">Vorname *</label>
+                        <input type="text" id="vorname" name="vorname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nachname">Nachname *</label>
+                        <input type="text" id="nachname" name="nachname" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefon">Telefon *</label>
+                    <input type="tel" id="telefon" name="telefon" required>
+                </div>
+                <div class="form-group">
+                    <label for="adresse">Strasse & Hausnummer *</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="z.B. Bahnhofstrasse 12" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="plz">PLZ *</label>
+                        <input type="text" id="plz" name="plz" placeholder="z.B. 8001" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ort">Ort *</label>
+                        <input type="text" id="ort" name="ort" placeholder="z.B. Zürich" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="gebaeude">Art des Gebäudes *</label>
+                    <select id="gebaeude" name="gebaeude" required>
+                        <option value="">Bitte wählen...</option>
+                        <option value="einfamilienhaus">Einfamilienhaus</option>
+                        <option value="mehrfamilienhaus">Mehrfamilienhaus</option>
+                        <option value="gewerbeobjekt">Gewerbeobjekt</option>
+                        <option value="andere">Andere</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nachricht">Kurze Beschreibung Ihres Anliegens (optional)</label>
+                    <textarea id="nachricht" name="nachricht" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">[SUBMIT BUTTON TEXT]</button>
+                <p class="form-privacy">
+                    Mit dem Absenden stimmen Sie unserer <a href="#">Datenschutzerklärung</a> zu. 
+                    Ihre Daten werden ausschliesslich zur Bearbeitung Ihrer Anfrage verwendet.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>[FIRMENNAME]</h3>
+                <p>[SLOGAN / BESCHREIBUNG]</p>
+            </div>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>E-Mail: <a href="mailto:[EMAIL]">[EMAIL]</a></p>
+                <p>Telefon: <a href="tel:[TELEFON]">[TELEFON]</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 [FIRMENNAME]. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
