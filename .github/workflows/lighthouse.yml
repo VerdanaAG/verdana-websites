@@ -1,4 +1,4 @@
-```yaml name: Lighthouse CI
+name: Lighthouse CI
 
 on: push: branches: - main paths: - 'landing-pages/' pull_request: branches: - main paths: - 'landing-pages/'
 
